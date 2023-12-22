@@ -4,7 +4,7 @@ pragma solidity 0.8.23;
 import "ERC721A/ERC721A.sol";
 
 contract JayNFT is ERC721A {
-    uint8 public constant maxSupply = 5;
+    uint256 public constant maxSupply = 5;
     string[5] private prompts = [
         "Behold Embercrest, the Fire Dragon, born of flames that dance upon its scales like liquid fire. Against a canvas of twilight, this dragon's incandescent presence illuminates the dreamscape, radiating warmth and passion, a symbol of untamed energy and fierce determination.",
         "Tidecaller, the Water Dragon, gracefully navigates a world of serene oceans and shimmering tides. Its scales ripple with opalescent hues, reflecting the moon's tender embrace. In the tranquil depths of this dreamy landscape, Tidecaller embodies fluidity, adaptability, and the boundless mysteries of the deep.",
