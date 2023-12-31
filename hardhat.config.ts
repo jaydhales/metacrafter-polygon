@@ -1,9 +1,14 @@
 import {HardhatUserConfig} from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import {configDotenv} from 'dotenv';
+
+
 // https://github.com/projectsophon/hardhat-circom
 import "hardhat-circom";
 // circuits
 import circuits = require('./circuits.config.json');
+
+configDotenv();
 
 // set env var to the root of the project
 process.env.BASE_PATH = __dirname;
@@ -29,6 +34,12 @@ const config: HardhatUserConfig = {
     ptau: "powersOfTau28_hez_final_12.ptau",
     // (required) Each object in this array refers to a separate circuit
     circuits: JSON.parse(JSON.stringify(circuits))
+  },
+  networks: {
+    sepolia: {
+      url: process.env.SEPOLIA_RPC_URL,
+      accounts: [process.env.PRIVATE_KEY!],
+    },
   },
 };
 
