@@ -1,4 +1,6 @@
-# zardkat 🐱
+# ZKEVM 🐱
+
+### Contract Address: [0x489ACa689377dB43b1e4E9482b1df51A78C848C5](https://sepolia.etherscan.io/address/0x489ACa689377dB43b1e4E9482b1df51A78C848C5)
 
 A [hardhat-circom](https://github.com/projectsophon/hardhat-circom) template to generate zero-knowledge circuits, proofs, and solidity verifiers
 
